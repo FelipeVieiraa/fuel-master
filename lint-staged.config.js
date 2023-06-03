@@ -1,4 +1,4 @@
-export default {
+module.exports = {
 	'./src/**/*.(ts|tsx)': () => 'tsc --noEmit',
 
 	'./src/**/*.(tsx|ts)': (filenames) => [
