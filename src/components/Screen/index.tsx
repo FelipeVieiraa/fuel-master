@@ -1,12 +1,12 @@
-import { Layout } from "@ui-kitten/components";
-import { ScrollView } from "react-native";
+import { Layout } from '@ui-kitten/components';
+import { ScrollView } from 'react-native';
 
-import { ScreenComponentType, ScreenProps } from "./types";
+import { ScreenComponentType, ScreenProps } from './types';
 
 const Screen = ({ children, scrollEnabled, ...rest }: ScreenProps) => {
-  const Component: ScreenComponentType = scrollEnabled ? ScrollView : Layout;
+	const Component: ScreenComponentType = scrollEnabled ? ScrollView : Layout;
 
-  return <Component {...rest}>{children}</Component>;
+	return <Component {...rest}>{children}</Component>;
 };
 
 export default Screen;

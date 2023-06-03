@@ -1,16 +1,16 @@
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer } from '@react-navigation/native';
 
-import LoginRoutes from "./LoginRoutes";
-import AppRoutes from "./AppRoutes";
+import LoginRoutes from './LoginRoutes';
+import AppRoutes from './AppRoutes';
 
 const Routes = () => {
-  const signed = false;
+	const signed = false;
 
-  return (
-    <NavigationContainer>
-      {signed ? <AppRoutes /> : <LoginRoutes />}
-    </NavigationContainer>
-  );
+	return (
+		<NavigationContainer>
+			{signed ? <AppRoutes /> : <LoginRoutes />}
+		</NavigationContainer>
+	);
 };
 
 export default Routes;

@@ -1,12 +1,11 @@
-import { View, Text } from "react-native";
-import React from "react";
+import { View, Text } from 'react-native';
 
 const Dashboard = () => {
-  return (
-    <View>
-      <Text>Dashboard</Text>
-    </View>
-  );
+	return (
+		<View>
+			<Text>Dashboard</Text>
+		</View>
+	);
 };
 
 export default Dashboard;
