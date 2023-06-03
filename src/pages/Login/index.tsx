@@ -1,4 +1,4 @@
-import Screen from '../../components/Screen';
+import { Screen } from '@components';
 
 const Login = () => {
 	return (
