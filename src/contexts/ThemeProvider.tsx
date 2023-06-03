@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { ReactNode, createContext, useState } from 'react';
 import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import * as eva from '@eva-design/eva';
@@ -12,10 +12,13 @@ type ThemeContextProps = {
 	theme: Theme;
 	setTheme: (theme: Theme) => void;
 };
+type ThemeProviderProps = {
+	children: ReactNode;
+};
 
 export const ThemeContext = createContext({} as ThemeContextProps);
 
-const ThemeProvider = ({ children }) => {
+const ThemeProvider = ({ children }: ThemeProviderProps) => {
 	const [theme, setTheme] = useState<Theme>('light');
 	const themes = {
 		light,
