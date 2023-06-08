@@ -1,6 +1,4 @@
 {
-	"$schema": "./node_modules/@eva-design/dss/schema/schema.json",
-	"version": 1,
 	"strict": {
 		"text-font-family": "System",
 		"text-heading-1-font-size": 36,

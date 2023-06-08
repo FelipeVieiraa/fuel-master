@@ -18,12 +18,17 @@ type ThemeProviderProps = {
 
 export const ThemeContext = createContext({} as ThemeContextProps);
 
+ApplicationProvider['defaultProps'] = {
+	customMapping,
+};
+
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
 	const [theme, setTheme] = useState<Theme>('light');
 	const themes = {
 		light,
 		dark,
 	};
+
 	return (
 		<>
 			<IconRegistry icons={EvaIconsPack} />
@@ -31,8 +36,7 @@ const ThemeProvider = ({ children }: ThemeProviderProps) => {
 			<ThemeContext.Provider value={{ theme, setTheme }}>
 				<ApplicationProvider
 					{...eva}
-					theme={themes[theme]}
-					customMapping={customMapping as any}
+					theme={{ ...eva[theme], ...themes[theme] }}
 				>
 					{children}
 				</ApplicationProvider>
