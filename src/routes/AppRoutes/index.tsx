@@ -1,13 +1,17 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { Login } from '@pages';
+import { Dashboard } from '@pages';
 
 const Stack = createNativeStackNavigator();
 
 const AppRoutes = () => {
 	return (
 		<Stack.Navigator>
-			<Stack.Screen name="Login" component={Login} />
+			<Stack.Screen
+				name="Login"
+				component={Dashboard}
+				options={{ headerShown: false }}
+			/>
 		</Stack.Navigator>
 	);
 };

@@ -2,13 +2,15 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import LoginRoutes from './LoginRoutes';
 import AppRoutes from './AppRoutes';
+import { useContext } from 'react';
+import { LoginContext } from 'src/contexts/LoginProvider';
 
 const Routes = () => {
-	const signed = false;
+	const { isAuthenticated } = useContext(LoginContext);
 
 	return (
 		<NavigationContainer>
-			{signed ? <AppRoutes /> : <LoginRoutes />}
+			{isAuthenticated ? <AppRoutes /> : <LoginRoutes />}
 		</NavigationContainer>
 	);
 };
