@@ -1,5 +1,6 @@
 {
-	"email": "E-mail",
-	"name": "Nome",
-	"password": "Senha"
+	"email": "Correo electrónico",
+	"name": "Nombre",
+	"password": "Contraseña",
+	"sign_in": "Iniciar"
 }

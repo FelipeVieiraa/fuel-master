@@ -62,9 +62,10 @@ const Login = () => {
 				<Button
 					style={sx.button}
 					onPress={handleSubmit(signIn)}
+					disabled={!!errors.email || !!errors.password}
 					loading={loading}
 				>
-					Entrar
+					{t('sign_in')}
 				</Button>
 
 				<View style={sx.errorsContainer}>

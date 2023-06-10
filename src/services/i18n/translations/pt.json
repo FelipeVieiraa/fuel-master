@@ -1,5 +1,6 @@
 {
 	"email": "E-mail",
 	"name": "Nome",
-	"password": "Senha"
+	"password": "Senha",
+	"sign_in": "Entrar"
 }
