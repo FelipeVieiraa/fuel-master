@@ -22,4 +22,8 @@ export default StyleSheet.create({
 		marginTop: spacingVertical[4],
 		maxWidth: 480,
 	},
+	errorsContainer: {
+		marginTop: spacingVertical[3],
+		alignSelf: 'center',
+	},
 });
