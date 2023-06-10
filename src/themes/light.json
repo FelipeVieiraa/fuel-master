@@ -31,5 +31,7 @@
 	"color-primary-active-border": "$color-primary-500",
 	"color-primary-disabled": "#F5F7FA",
 	"color-primary-disabled-border": "#DCDFE6",
-	"text-disabled-color": "#B8BECC"
+	"text-disabled-color": "#B8BECC",
+
+	"color-primary-focus": "$color-primary-500"
 }

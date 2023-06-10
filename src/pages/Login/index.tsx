@@ -6,8 +6,10 @@ import { Form, Input, Screen } from '@components';
 import sx from './styles';
 import useLogin from './useLogin';
 import Button from 'src/components/Button';
+import { useTranslation } from 'react-i18next';
 
 const Login = () => {
+	const { t } = useTranslation();
 	const { signIn, defaultValues, loading } = useLogin();
 	const { handleSubmit, control } = useForm({
 		defaultValues,
@@ -26,8 +28,9 @@ const Login = () => {
 					control={control}
 					render={({ field }) => (
 						<Input
-							placeholder="E-mail"
+							placeholder={t(field.name)}
 							onChangeText={field.onChange}
+							label={t(field.name)}
 							{...field}
 						/>
 					)}
@@ -38,8 +41,9 @@ const Login = () => {
 					render={({ field }) => (
 						<Input
 							style={sx.marginTop}
-							placeholder="Senha"
+							placeholder={t(field.name)}
 							onChangeText={field.onChange}
+							label={t(field.name)}
 							{...field}
 						/>
 					)}
