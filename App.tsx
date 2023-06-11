@@ -1,7 +1,8 @@
 import 'src/services/i18n';
+
+import { LoginProvider, ThemeProvider } from '@contexts';
+
 import Routes from 'src/routes';
-import ThemeProvider from 'src/contexts/ThemeProvider';
-import LoginProvider from 'src/contexts/LoginProvider';
 
 export default function App() {
 	return (

@@ -1,9 +1,11 @@
+import { useContext } from 'react';
+
 import { NavigationContainer } from '@react-navigation/native';
 
-import LoginRoutes from './LoginRoutes';
+import { LoginContext } from '@contexts';
+
 import AppRoutes from './AppRoutes';
-import { useContext } from 'react';
-import { LoginContext } from 'src/contexts/LoginProvider';
+import LoginRoutes from './LoginRoutes';
 
 const Routes = () => {
 	const { isAuthenticated } = useContext(LoginContext);

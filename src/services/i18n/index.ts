@@ -1,16 +1,15 @@
 import 'intl-pluralrules';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import { zodI18nMap } from 'zod-i18n-map';
 import z from 'zod';
-
-import ptTranslation from './translations/pt.json';
-import enTranslation from './translations/en.json';
-import esTranslation from './translations/es.json';
-
+import { zodI18nMap } from 'zod-i18n-map';
+import enZodTranslation from 'zod-i18n-map/locales/en/zod.json';
 import esZodTranslation from 'zod-i18n-map/locales/es/zod.json';
 import ptZodTranslation from 'zod-i18n-map/locales/pt/zod.json';
-import enZodTranslation from 'zod-i18n-map/locales/en/zod.json';
+
+import enTranslation from './translations/en.json';
+import esTranslation from './translations/es.json';
+import ptTranslation from './translations/pt.json';
 
 z.setErrorMap(zodI18nMap);
 

@@ -1,16 +1,17 @@
+import { View } from 'react-native';
+
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Text } from '@ui-kitten/components';
 import LottieView from 'lottie-react-native';
 import { Controller, useForm } from 'react-hook-form';
-import { Text } from '@ui-kitten/components';
-import { zodResolver } from '@hookform/resolvers/zod';
+import { useTranslation } from 'react-i18next';
 
-import { Form, Input, Screen } from '@components';
+import { Button, Form, Input, Screen } from '@components';
+
+import { signInSchema } from 'src/types/auth';
 
 import sx from './styles';
 import useLogin from './useLogin';
-import Button from 'src/components/Button';
-import { useTranslation } from 'react-i18next';
-import { signInSchema } from 'src/types/auth';
-import { View } from 'react-native';
 
 const Login = () => {
 	const { t } = useTranslation();

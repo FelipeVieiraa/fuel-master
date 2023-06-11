@@ -11,6 +11,7 @@ module.exports = function (api) {
 						'@components': './src/components',
 						'@pages': './src/pages',
 						'@assets': './src/assets',
+						'@contexts': './src/contexts',
 					},
 					extensions: ['.ts', '.tsx', '.json'],
 				},

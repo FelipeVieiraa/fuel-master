@@ -1,4 +1,5 @@
-import { ReactNode, createContext, useState } from 'react';
+import { createContext, ReactNode, useState } from 'react';
+
 import { UserType } from 'src/types/user';
 
 type LoginContextType = {

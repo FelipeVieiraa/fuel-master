@@ -1,11 +1,12 @@
-import { ReactNode, createContext, useState } from 'react';
+import { createContext, ReactNode, useState } from 'react';
+
+import * as eva from '@eva-design/eva';
 import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
-import * as eva from '@eva-design/eva';
 
-import dark from '../themes/dark.json';
-import light from '../themes/light.json';
-import customMapping from '../themes/mapping.json';
+import dark from '../../themes/dark.json';
+import light from '../../themes/light.json';
+import customMapping from '../../themes/mapping.json';
 
 type Theme = 'light' | 'dark';
 type ThemeContextProps = {
