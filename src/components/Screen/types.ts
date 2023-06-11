@@ -1,7 +1,11 @@
-import { LayoutProps } from '@ui-kitten/components';
 import { ScrollViewProps } from 'react-native';
 
-export type ScreenProps = ScrollViewProps & LayoutProps;
+import { LayoutProps } from '@ui-kitten/components';
+
+export type ScreenProps = ScrollViewProps &
+	LayoutProps & {
+		safe?: boolean;
+	};
 
 export type ScreenComponentType = React.ComponentType<
 	ScrollViewProps | LayoutProps

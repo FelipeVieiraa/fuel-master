@@ -1,10 +1,11 @@
 import { useCallback } from 'react';
+
 import {
-	Button as UiKitButton,
 	ButtonProps,
-	useStyleSheet,
-	Spinner,
 	Icon,
+	Spinner,
+	Button as UiKitButton,
+	useStyleSheet,
 } from '@ui-kitten/components';
 
 import styles from './styles';

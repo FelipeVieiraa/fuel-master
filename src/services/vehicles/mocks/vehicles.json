@@ -1,0 +1,14 @@
+[
+	{
+		"id": 1,
+		"name": "BMW X1 2023",
+		"licensePlate": "MXJ4048",
+		"ownerId": 1
+	},
+	{
+		"id": 2,
+		"name": "Hornet 2017",
+		"licensePlate": "ASD2312",
+		"ownerId": 1
+	}
+]

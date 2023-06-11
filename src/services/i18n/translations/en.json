@@ -2,5 +2,7 @@
 	"email": "Email",
 	"name": "Name",
 	"password": "Password",
+	"register_new_vehicle": "Register new vehicle",
+	"select_vehicle": "Select vehicle",
 	"sign_in": "Sign in"
 }

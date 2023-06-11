@@ -1,8 +1,8 @@
 import { SignInType } from 'src/types/auth';
-import { delay } from 'src/utils';
 import { UserType } from 'src/types/user';
+import { delay } from 'src/utils';
 
-import usersMock from '../mocks/users.json';
+import usersMock from './mocks/users.json';
 
 export const auth = async (props: SignInType): Promise<UserType> => {
 	await delay(2000);
