@@ -3,6 +3,7 @@
 	"name": "Nombre",
 	"password": "Contraseña",
 	"register_new_vehicle": "Registrar nuevo vehículo",
+	"select": "Seleccionar",
 	"select_vehicle": "Seleccionar vehículo",
 	"sign_in": "Iniciar"
 }

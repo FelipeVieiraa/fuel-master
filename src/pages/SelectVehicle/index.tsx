@@ -32,7 +32,11 @@ const SelectVehicle = () => {
 					</View>
 				) : (
 					vehicles.map((vehicle) => (
-						<ListVehicleItem key={vehicle.id} style={sx.vehicleItem} />
+						<ListVehicleItem
+							key={vehicle.id}
+							vehicle={vehicle}
+							style={sx.vehicleItem}
+						/>
 					))
 				)}
 
@@ -41,7 +45,7 @@ const SelectVehicle = () => {
 					appearance="ghost"
 					icon="plus-square-outline"
 				>
-					Registrar novo veículo
+					{t('register_new_vehicle')}
 				</Button>
 			</View>
 		</Screen>

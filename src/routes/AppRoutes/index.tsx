@@ -1,10 +1,24 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { CompositeNavigationProp } from '@react-navigation/native';
+import {
+	createNativeStackNavigator,
+	type NativeStackNavigationProp,
+} from '@react-navigation/native-stack';
 
 import { Dashboard } from '@pages';
 
 import SelectVehicle from 'src/pages/SelectVehicle';
 
-const Stack = createNativeStackNavigator();
+type RootStackParamList = {
+	SelectVehicle: undefined;
+	Dashboard: undefined;
+};
+
+export type CompositeNavigations = CompositeNavigationProp<
+	NativeStackNavigationProp<any>,
+	NativeStackNavigationProp<RootStackParamList>
+>;
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const AppRoutes = () => {
 	return (

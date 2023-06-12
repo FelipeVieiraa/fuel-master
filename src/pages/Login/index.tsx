@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Button, Form, Input, Screen } from '@components';
 
+import Icon from 'src/components/Icon';
 import { signInSchema } from 'src/types/auth';
 
 import sx from './styles';
